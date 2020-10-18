@@ -1,0 +1,74 @@
+{% extends "MYnavbar.html" %}
+
+{% block content %}
+  <section class="search-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <form target="_blank"  method="get" action= "{{url_for('pageOne')}}" >
+            <div>
+              <div class="input-group">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" >
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">Get Stuffed!</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="..\static\Sunrise_River.jpg" alt="First slide">
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="..\static\Mountain1.jpg"  alt="Second slide">
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="..\static\Blue.jpg"  alt="Third slide">
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+        <!-- <form action="one.html" method="get">
+            <label for="id_email" >Email</label>
+            <input type="email" id="id_email" name="UserEmail" placeholder="enter here" required>
+
+            <label for="id_password">Password</label>
+            <input type="password" id="id_password" name="UserPassword" placeholder="password" required>
+
+            <input type="submit" name="Submit" value="Submit" >
+
+            <br>
+            <input id="id_checkbox" type="checkbox" name="Keep me signed in" value="yes">
+            <label for="id_checkbox">Keep me signed in</label>
+        </form> -->

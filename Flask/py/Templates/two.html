@@ -1,0 +1,54 @@
+{% extends "MYnavbar.html" %}
+
+{% block content %}
+    <header>
+      <h1>STuff</h1>
+    </header>
+
+    <div class="">
+      <p>Here are my list mfer:</p>
+      <h4><u> Ordered List </u></h4>
+      <ol>
+        <li>cat</li>
+        <li>is</li>
+        <li>mammal</li>
+      </ol>
+
+      <h4> <u> Unordered List </u> </h4>
+      <ul>
+        <li>I</li>
+        <li>want a</li>
+        <ul>
+          <li>some nesting</li>
+          <ul>
+            <li>some more nesting</li>
+            <ul>
+              <li>a little more nesting</li>
+            </ul>
+          </ul>
+        </ul>
+        <li>baby lion</li>
+      </ul>
+    </div>
+
+    <p> <strong> Hey want to see some photos? </strong></p>
+
+    <figure>
+      <a href="{{url_for('pageThree')}}"> <img src="..\static\icon_image.webp"  width = "50px"  alt="error"> </a>
+      <figcaption> <em> Click Icon</em> </figcaption>
+    </figure>
+
+    <table border="1">
+      <tr> <th>Real Name </th> <th>Discord Name</th>  </tr>
+      <tr> <td>Ammar</td> <td>Fano </td> </tr>
+      <tr> <td rowspan="3"> Abdullah</td> <td> Elusive </td> </tr>
+      <tr> <td> Agent_1_uhh_0170 </td> </tr>
+      <tr> <td> Windows_Update_Hurt_Me </td> </tr>
+      <tr> <td>Faizan</td> <td>Moti </td> </tr>
+      <tr> <td>Musab</td> <td>Bhoosi </td> </tr>
+      <tr> <td rowspan="2"> Mahad</td> <td> Peinzero </td> </tr>
+      <tr> <td> BoomerMan </td> </tr>
+      <caption> <strong> Confidential Information </strong> </caption>
+    </table>
+
+    {% endblock %}

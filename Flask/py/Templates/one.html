@@ -1,0 +1,40 @@
+{% extends "MYnavbar.html"%}
+
+{% block content %}
+    <p>Me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html</strong>
+      me learning <strong>html.</strong></p>
+
+    <p>Me learning <em>html</em>
+      me learning <em>html</em>
+      me learning <em>html</em>
+      me learning <em>html</em>.</p>
+
+    <h3>WoW Moments</h3>
+    <video src="E:\TV Series\Videos\Andar bhaag na hai na 1.mp4" width="500px" controls>
+      Your browser does not support <code>Video</code>
+    </video>
+
+    <p>Want to see sm list mfer?</p>
+    <nav>
+      <a href="{{url_for('pageTwo')}}">Here is the link to my sexy lists.</a> <br><br>
+    </nav>
+
+
+    <br><br><br>
+    <footer>
+      <details open>
+        <summary>Note</summary>
+        <p>This website is currently under development.</p>
+        <progress value="10" max="100"></progress><br>
+        <caption>progress</caption>
+      </details>
+    </footer>
+{% endblock %}
